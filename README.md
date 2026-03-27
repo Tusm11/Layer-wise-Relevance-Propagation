@@ -6,7 +6,7 @@ Standard merging techniques (like Linear or SLERP) often treat all model weights
 
 ---
 
-## 🧠 The Core Concept
+## The Core Concept
 
 ### The Problem with Standard Merging
 When merging fine-tuned models, a simple weighted average (`θ_merged = 0.7 × θ_model_A + 0.3 × θ_model_B`) dilutes the specific knowledge learned by each model. In reality, only a small fraction of a model's weights drive its new capabilities; the rest are effectively noise.
@@ -38,7 +38,7 @@ Our merging algorithm executes in three steps for every tensor:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 Because LRP-Merge is a custom extension, it requires a local installation of `mergekit` with our custom script injected.
 
@@ -57,7 +57,7 @@ Because LRP-Merge is a custom extension, it requires a local installation of `me
 
 ---
 
-## 🛠️ Usage
+##  Usage
 
 ### 1. Configure your Merge (YAML)
 Create a `lrp_config.yaml` file. Note the `merge_method: lrp` and the `density` parameter (which controls what percentage of weights to keep per layer).
@@ -130,7 +130,7 @@ Assistant: Photosynthesis is a process used by plants, algae, and some bacteria 
 
 ---
 
-## 🔮 Next Steps: Injecting Real LRP Scores
+##  Next Steps: Injecting Real LRP Scores
 
 Currently, the engine is designed to look for pre-calculated LRP relevance maps (saved as `.pt` tensors) in the pipeline. If it does not find them, it defaults to magnitude pruning.
 
