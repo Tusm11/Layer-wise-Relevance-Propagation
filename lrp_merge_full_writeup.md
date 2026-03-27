@@ -121,6 +121,13 @@ response = tokenizer.decode(outputs[0][inputs.input_ids.shape[1]:], skip_special
 print(response)
 ```
 
+### Example Output
+Running the script on an LRP-merged **Qwen2.5-1.5B** (Base + Instruct) produces coherent, instruction-following text:
+```text
+User: What is photosynthesis?
+Assistant: Photosynthesis is a process used by plants, algae, and some bacteria to convert light energy into chemical energy. This chemical energy is stored in glucose, a simple sugar that the plant can use for energy. Photosynthesis occurs in the leaves of the plant...
+```
+
 ---
 
 ## 🔮 Next Steps: Injecting Real LRP Scores
