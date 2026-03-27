@@ -1,0 +1,8 @@
+merge_method: lrp
+base_model: ./qwen-base
+parameters:
+  density: 0.7  
+models:
+  - model: ./qwen-instruct
+    parameters:
+      weight: 1.0

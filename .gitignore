@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model weights and downloaded data
+qwen-base/
+qwen-instruct/
+merged-model-directory/
+*.safetensors
+*.bin
+*.h5
+*.msgpack
+
+# LRP Scores (if they get large)
+lrp_scores/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Mergekit build/egg info (since we cloned the repo inside)
+mergekit_repo/build/
+mergekit_repo/mergekit.egg-info/
+mergekit_repo/dist/
